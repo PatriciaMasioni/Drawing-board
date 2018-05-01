@@ -1,0 +1,86 @@
+/************************************************************
+
+Theme name : Responsive template
+Description:
+Author: Patricia Masioni
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Tags: P5, personal project.
+
+**************************************************************
+
+Table of Contents:
+
+  0. GLOBAL
+  1. SECTION_INFO
+  2. SECTION_INFO
+
+
+**************************************************************/
+
+
+/************************************************
+0.	GLOBAL
+************************************************/
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 16px;
+  font-family: "mMntserrat" "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+
+/************************************************
+  1. SECTION_INFO
+************************************************/
+
+
+#info{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 0.5rem;
+}
+
+#info:hover{
+  transition: all 0.05s;
+  border-bottom: solid 0.1rem blue;
+
+}
+
+h3{
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 0;
+
+}
+
+/************************************************
+  2. SECTION_BUTTON
+************************************************/
+
+#button{
+  width: 100%;
+  float: right;
+}
+
+#resetButton{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 1.5rem;
+}

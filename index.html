@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>fun</title>
+
+  </head>
+  <body>
+    <section id="info">
+    <h3> Press the mouse to draw fun stuff !
+    </3>
+  </section>
+  <section id="button">
+    <p id="resetButton">
+      <input type="button" onclick="reloadPage()" value="Reset">
+    </p>
+  <section>
+
+    <script>
+
+    function setup() {
+      createCanvas(800, 500);
+      background(0);
+      colorMode(HSB);
+
+    }
+
+    function draw(){
+
+        var r = random(90);
+        var rd = random(100);
+        if(mouseIsPressed){
+        stroke(220, rd, 100,100);
+        ellipse(mouseY, mouseX, r,r);
+        }
+        else {
+          fill(255, 255, 255, 0);
+        }
+
+      }
+
+      function reloadPage(){
+         window.location.reload();
+      }
+
+  </script>
+
+
+
+    <script src="P5/p5.min.js"> </script>
+    <script src="JS/jquery-3.3.1.min.js"> </script>
+<!--    <scrip src="P5/sketch.js"> </script> DONT WORK (?) -->
+
+
+  </body>
+</html>
